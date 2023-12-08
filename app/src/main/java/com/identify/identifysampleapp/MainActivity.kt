@@ -43,20 +43,14 @@ class MainActivity : AppCompatActivity() {
 
 
         val identifyObject = IdentifySdk.Builder()
-            .api("")
-            .socket("", "")
-            .stun("", "")
-            .turn("", "", "", "")
+            .api("api url")
+            .socket("socket url","socket port")
+            .stun("stun url","stun port")
+            .turn("turn url","turn port","turn username","turn password")
             .lifeCycle(this.lifecycle)
             .options(identityOptions)
             .build()
 
-        identifyObject.identifyErrorListener = object : IdentifyErrorListener {
-            override fun identError(errorMessage: String) {
-            }
-        }
-
-
-        identifyObject.startIdentification(this, "", "tr")
+        identifyObject.startIdentification(this,"xxxx-xxxx-xxxx-xxxx-xxxxxxx","tr")
     }
 }
