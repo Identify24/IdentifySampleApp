@@ -1,6 +1,6 @@
 # IdentifySampleApp
 
-MainActivity içerisinden Api Url, socket url/port, stun url/port, turn url/port/username/password ve ident id bilgilerini doldurmalısınız.
+In the MainActivity, you need to fill in Api Url, socket url/port, stun url/port, turn url/port/username/password and ident id information.
 <pre>
           val identifyObject = IdentifySdk.Builder()
             .api("api url")
@@ -15,7 +15,7 @@ MainActivity içerisinden Api Url, socket url/port, stun url/port, turn url/port
 </pre>
 
 
-settings.gradle içerisinden SDK’e erişiminiz için credentials bölümündeki value değeri doldurulmalıdır. Bu veri elinizde yoksa bizimle iletişime geçin.
+In settings.gradle, the value value in the credentials section must be filled for your access to the SDK. If you do not have this data, please contact us.
 
 
  <pre>allprojects {
