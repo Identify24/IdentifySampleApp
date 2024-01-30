@@ -19,6 +19,7 @@ import com.identify.design.signature.SignatureModuleFragment
 import com.identify.design.speech.SpeechModuleFragment
 import com.identify.design.thanks.ThankYouFragment
 import com.identify.design.util.alert
+import com.identify.design.verification.VerificationFailFragment
 import com.identify.design.video.VideoRecordModuleFragment
 import com.identify.design.webrtc.CallModuleFragment
 import com.identify.sdk.BaseIdentifyActivity
@@ -45,6 +46,8 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
     override fun getCallModuleFragmentInstance(isRedirect: Boolean): Fragment? = CallModuleFragment.newInstance(isRedirect)
 
     override fun getIntroFragmentInstance(): Fragment? = IntroFragment.newInstance()
+
+    override fun getVerificationFailFragmentInstance(): Fragment? = VerificationFailFragment.newInstance()
 
     override fun getThankYouFragmentInstance(): Fragment? = ThankYouFragment.newInstance()
 
