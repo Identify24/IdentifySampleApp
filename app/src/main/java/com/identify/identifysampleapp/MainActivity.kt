@@ -2,11 +2,9 @@ package com.identify.identifysampleapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.identify.sdk.IdentifyErrorListener
 import com.identify.sdk.IdentifySdk
 import com.identify.sdk.IdentityOptions
 import com.identify.sdk.repository.model.enums.IdentifyModuleTypes
-import com.identify.sdk.repository.model.enums.ModuleCacheType
 import com.identify.sdk.repository.model.mrz.DocType
 
 class MainActivity : AppCompatActivity() {
@@ -44,9 +42,6 @@ class MainActivity : AppCompatActivity() {
 
         val identifyObject = IdentifySdk.Builder()
             .api("api url")
-            .socket("socket url","socket port")
-            .stun("stun url","stun port")
-            .turn("turn url","turn port","turn username","turn password")
             .lifeCycle(this.lifecycle)
             .options(identityOptions)
             .build()
