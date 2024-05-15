@@ -16,8 +16,8 @@ dependencyResolutionManagement {
             url = 'https://maven.pkg.github.com/business-service-solution-gmbh/id24.tr-android-sdk'
             name = "GitHubPackages"
             credentials {
-                username = "xxx"
-                password = "xxx"
+                username = "bssserviceacc"
+                password = "xxxxxx"
             }
         }
     }
