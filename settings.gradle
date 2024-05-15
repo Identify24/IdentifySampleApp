@@ -13,14 +13,11 @@ dependencyResolutionManagement {
 
         maven { url 'https://jitpack.io' }
         maven {
-            url 'https://gitlab.com/api/v4/projects/26590072/packages/maven'
-            name "GitLab"
-            credentials(HttpHeaderCredentials) {
-                name = 'Private-Token'
-                value = 'xxxxxxxxxxxxxxx'
-            }
-            authentication {
-                header(HttpHeaderAuthentication)
+            url = 'https://maven.pkg.github.com/business-service-solution-gmbh/id24.tr-android-sdk'
+            name = "GitHubPackages"
+            credentials {
+                username = "bssserviceacc"
+                password = "xxxxxx"
             }
         }
     }
