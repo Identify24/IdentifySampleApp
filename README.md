@@ -21,15 +21,12 @@ In settings.gradle, the value value in the credentials section must be filled fo
  <pre>allprojects {
 repositories {
 ...
-   maven {
-            url 'https://gitlab.com/api/v4/projects/26590072/packages/maven'
-            name "GitLab"
-            credentials(HttpHeaderCredentials) {
-                name = 'Private-Token'
-                value = 'xxxxxxxxxxxxxxx'
-            }
-            authentication {
-                header(HttpHeaderAuthentication)
+  maven {
+            url = 'https://maven.pkg.github.com/business-service-solution-gmbh/id24.tr-android-sdk'
+            name = "GitHubPackages"
+            credentials {
+                username = "bssserviceacc"
+                password = "xxxxxx"
             }
         }
 }
